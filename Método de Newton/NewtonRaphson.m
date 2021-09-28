@@ -12,7 +12,7 @@ x
 f(x)
   disp('--------------------------------');
 
-while (E  <= er)
+while (er  >= E)
   xa=x;
   x = xa-f(xa)/fl(xa);
   E = norm(x-xa);
@@ -20,7 +20,7 @@ while (E  <= er)
   k
   x
   f(xa)
-  er
+  E
   disp('-------------------------------');
 endwhile
 
