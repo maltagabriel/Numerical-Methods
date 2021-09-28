@@ -5,22 +5,22 @@ function x=NewtonRaphson(x0,E)
 k=0;
 
 output_precision(9);
-er=1;
+er=E+1;
 x=x0;
 k
 x
 f(x)
   disp('--------------------------------');
 
-while (er  >= E)
+while (er>E)
   xa=x;
   x = xa-f(xa)/fl(xa);
-  E = norm(x-xa);
+  er = norm(x-xa);
   k++;
   k
   x
   f(xa)
-  E
+  er
   disp('-------------------------------');
 endwhile
 
