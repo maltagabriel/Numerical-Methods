@@ -15,7 +15,7 @@ f(x)
 while (E  <= er)
   xa=x;
   x = xa-f(xa)/fl(xa);
-  er = norm(x-xa);
+  E = norm(x-xa);
   k++;
   k
   x
