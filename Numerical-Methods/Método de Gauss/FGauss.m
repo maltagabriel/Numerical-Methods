@@ -1,4 +1,3 @@
-
 %Escalonamento de uma matriz, método básico para todos outros de resolução de sistema linear
 
 function FGauss (A,d)

@@ -3,13 +3,13 @@
 
 function c = CriterioSassenfeld(B)
 
-  for i=1:size(B,2)
+for i=1:10
 Bt(i,:)=B(i,:)/B(i,i);
 endfor
-b=zeros(1,size(B,2));
+b=zeros(1,10);
 
-for i=1:size(B,2)
-	  for j=i+1:size(B,2)
+for i=1:10
+	  for j=i+1:10
 		  b(i)=abs(Bt(i,j))+b(i);
 endfor
 endfor
